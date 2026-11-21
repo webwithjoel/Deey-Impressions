@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color: #231A26; background: #FBF7F0; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Poppins, sans-serif; background: #FBF7F0; }
+button, input, select, textarea { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #F0C75A; outline-offset: 2px; }
+.page-shell { width: min(1180px, calc(100% - 32px)); margin-inline: auto; }
+.page-pad { width: 100%; padding-inline: max(16px, calc((100vw - 1180px)/2)); }
+.section { @apply py-14 sm:py-20; }
+.section-title { @apply font-heading text-3xl sm:text-4xl text-purple text-center; }
+.section-subtitle { @apply mt-3 text-sm sm:text-base text-charcoal/65 text-center max-w-2xl mx-auto; }
+.icon-btn { @apply w-11 h-11 rounded-full inline-flex items-center justify-center text-purple hover:bg-purple/5; }
+.cart-badge { @apply absolute -top-1 -right-1 min-w-5 h-5 px-1 rounded-full bg-gold text-purple-dark text-[10px] font-bold flex items-center justify-center; }
+.primary-button { @apply min-h-11 px-5 rounded-full bg-gold text-purple-dark font-semibold text-sm inline-flex items-center justify-center hover:bg-gold-light transition; }
+.secondary-button { @apply min-h-11 px-5 rounded-full border border-gold text-gold-light font-semibold text-sm inline-flex items-center justify-center hover:bg-gold hover:text-purple-dark transition; }
+.category-card { @apply relative h-[230px] sm:h-[300px] overflow-hidden rounded-card shadow-soft transition-transform hover:-translate-y-1; }
+.product-card { @apply overflow-hidden rounded-card bg-white border border-soft shadow-[0_8px_24px_rgba(75,15,85,.07)]; }
+.filter-chip { @apply shrink-0 min-h-11 px-4 rounded-full border border-soft bg-white text-sm text-charcoal; }
+.filter-chip.active { @apply bg-purple text-gold-light border-purple; }
+.shadow-soft { box-shadow: 0 10px 30px rgba(75,15,85,.10); }
+.field { @apply flex flex-col gap-1 text-sm font-medium text-purple; }
+.field input, .field select, .field textarea { @apply mt-1 min-h-11 w-full rounded-xl border border-soft bg-white px-3 text-charcoal text-sm; }
+.field textarea { @apply min-h-20 py-3; }
+.field small { @apply text-[11px] font-normal text-charcoal/55; }
+.event-card { @apply rounded-card border border-soft bg-white p-4 flex gap-3 shadow-soft; }
+.choice-card { @apply rounded-xl border border-soft p-3 text-left bg-white min-h-[84px]; }
+.choice-card.selected { @apply border-gold ring-2 ring-gold/50 bg-gold/5; }
+.choice-card img { @apply w-full h-20 object-cover rounded-lg; }
+.stepper { @apply h-11 rounded-full border border-soft bg-white flex items-center; }
+.stepper button { @apply w-11 h-full text-lg text-purple; }
+.stepper span { @apply min-w-12 text-center text-sm font-semibold; }
+.modal-scroll { scrollbar-width: thin; scrollbar-color: #D4A22C #FBF7F0; }
+@keyframes slideIn { from { transform: translateX(-100%); } to { transform: translateX(0); } }
+.animate-slide-in { animation: slideIn .25s ease-out; }
+@media (max-width: 640px) {
+  .category-card { height: 210px; }
+  .modal-mobile { height: 100dvh; border-radius: 0; }
+}

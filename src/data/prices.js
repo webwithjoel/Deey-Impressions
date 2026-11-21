@@ -1,0 +1,17 @@
+export const prices = {
+  proteins: { beef: 800, fish: 1800, chicken: 2000, gizzard: 500, egg: 300 },
+  riceBases: { 'Party Jollof Rice': 2200, 'Fried Rice': 2500, 'White Rice & Stew': 2500, 'Stir-Fry Spaghetti': 2500 },
+  riceAddons: { moiMoi: 700, plantain: 500, coleslaw: 400 },
+  stewBowls: { 'Chicken stew bowl': 3200, 'Assorted meat stew bowl': 2800, 'Fish stew bowl': 3000 },
+  stewSides: { 'White rice portion': 900, 'Fried plantain': 500 },
+  gizzardSizes: { 'Small cup': 5000, 'Medium tray': 13500, 'Large tray': 26000 },
+  smallChops: { cup: 3500, platter: 28000, tray: 52000 },
+  smallChopsAddons: { puffPuff: 2400, samosa: 4000, springRolls: 4000, gizzardCup: 2000 },
+  bar: { mocktail: 1500, cocktail: 2500, liveService: 60000, label: 150 },
+  packs: { office: 3500, premium: 5000, afterParty: 3000, sticker: 100 },
+  liveStation: { perGuest: 3800, station: 80000, extraDish: 300, fish: 900, chicken: 1200, extraProtein: 800 },
+  serving: { buffetDish: 15000, liveStation: 80000, platedPerPlate: 500 },
+  extras: { server: 8000, disposable: 300, chafing: 15000, cooler: 5000, goldSetup: 25000, crates: 10000 },
+  tray: { minimumPieces: 20, trayFeePer40: 2500 },
+  delivery: { 'Ile-Ife': 3000, Ilesha: 8000, Osogbo: 10000, largeEvent: 5000 },
+}
